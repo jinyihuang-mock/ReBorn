@@ -1,527 +1,146 @@
-2022-11-09 01:20:44.387 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
-2022-11-09 01:20:44.393 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_341 on MSI with PID 23084 (C:\Project\221107\wiki\target\classes started by 85441 in C:\Project\221107\wiki)
-2022-11-09 01:20:44.393 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2022-11-09 01:20:44.430 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-11-09 01:20:44.431 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-11-09 01:20:44.876 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-11-09 01:20:44.878 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-11-09 01:20:44.893 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2022-11-09 01:20:45.254 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-11-09 01:20:45.262 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-11-09 01:20:45.262 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-11-09 01:20:45.262 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-11-09 01:20:45.309 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-11-09 01:20:45.309 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 878 ms
-2022-11-09 01:20:45.815 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-09 01:20:45.987 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-11-09 01:20:45.998 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-11-09 01:20:46.010 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-11-09 01:20:46.017 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 1.93 seconds (JVM running for 2.558)
-2022-11-09 01:20:46.021 INFO  com.jiawa.wiki.config.WikiApplication             :25   [32m                  [0;39m 启动成功！！
-2022-11-09 01:20:46.021 INFO  com.jiawa.wiki.config.WikiApplication             :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-11-09 01:55:59.092 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-09 01:55:59.093 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-11-09 01:55:59.094 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-11-09 01:55:59.169 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-11-09 01:55:59.479 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-11-09 02:00:21.756 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2022-11-09 02:00:21.772 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-11-09 02:00:21.778 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-11-09 02:00:21.900 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_341 on MSI with PID 23084 (C:\Project\221107\wiki\target\classes started by 85441 in C:\Project\221107\wiki)
-2022-11-09 02:00:21.900 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2022-11-09 02:00:22.003 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-11-09 02:00:22.004 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-11-09 02:00:22.005 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
-2022-11-09 02:00:22.050 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-11-09 02:00:22.050 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-11-09 02:00:22.050 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-11-09 02:00:22.050 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-11-09 02:00:22.061 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-11-09 02:00:22.061 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 159 ms
-2022-11-09 02:00:22.130 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-09 02:00:22.174 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-11-09 02:00:22.180 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-11-09 02:00:22.182 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-11-09 02:00:22.185 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.31 seconds (JVM running for 2378.726)
-2022-11-09 02:00:22.187 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-11-09 02:00:22.187 INFO  com.jiawa.wiki.config.WikiApplication             :25   [32m                  [0;39m 启动成功！！
-2022-11-09 02:00:22.187 INFO  com.jiawa.wiki.config.WikiApplication             :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-11-09 02:00:23.398 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-09 02:00:23.398 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-11-09 02:00:23.399 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-11-09 02:00:23.412 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2022-11-09 02:00:23.644 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2022-11-09 05:30:30.780 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
-2022-11-09 05:30:30.785 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_341 on MSI with PID 11512 (C:\Project\221107\wiki\target\classes started by 85441 in C:\Project\221107\wiki)
-2022-11-09 05:30:30.785 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2022-11-09 05:30:30.819 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-11-09 05:30:30.820 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-11-09 05:30:31.303 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-11-09 05:30:31.305 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-11-09 05:30:31.321 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2022-11-09 05:30:31.697 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-11-09 05:30:31.704 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-11-09 05:30:31.704 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-11-09 05:30:31.705 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-11-09 05:30:31.750 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-11-09 05:30:31.750 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 930 ms
-2022-11-09 05:30:32.291 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-09 05:30:32.465 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-11-09 05:30:32.477 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-11-09 05:30:32.488 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-11-09 05:30:32.496 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 2.044 seconds (JVM running for 2.695)
-2022-11-09 05:30:32.499 INFO  com.jiawa.wiki.config.WikiApplication             :25   [32m                  [0;39m 启动成功！！
-2022-11-09 05:30:32.499 INFO  com.jiawa.wiki.config.WikiApplication             :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-11-09 05:30:36.920 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-09 05:30:36.920 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-11-09 05:30:36.921 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-11-09 05:30:36.988 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-11-09 05:30:37.298 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-11-09 06:43:14.884 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2022-11-09 06:43:14.906 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-11-09 06:43:14.907 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-11-09 06:43:15.054 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_341 on MSI with PID 11512 (C:\Project\221107\wiki\target\classes started by 85441 in C:\Project\221107\wiki)
-2022-11-09 06:43:15.054 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2022-11-09 06:43:15.164 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-11-09 06:43:15.164 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-11-09 06:43:15.166 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
-2022-11-09 06:43:15.217 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-11-09 06:43:15.217 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-11-09 06:43:15.217 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-11-09 06:43:15.218 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-11-09 06:43:15.227 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-11-09 06:43:15.227 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 171 ms
-2022-11-09 06:43:15.304 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-09 06:43:15.353 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-11-09 06:43:15.360 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-11-09 06:43:15.362 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-11-09 06:43:15.365 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.336 seconds (JVM running for 4365.564)
-2022-11-09 06:43:15.366 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-11-09 06:43:15.367 INFO  com.jiawa.wiki.config.WikiApplication             :25   [32m                  [0;39m 启动成功！！
-2022-11-09 06:43:15.367 INFO  com.jiawa.wiki.config.WikiApplication             :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-11-09 06:43:27.056 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-09 06:43:27.056 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-11-09 06:43:27.057 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-11-09 06:43:27.062 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2022-11-09 06:43:27.260 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2022-11-09 07:04:41.082 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=19m43s693ms735µs600ns).
-2022-11-09 07:49:54.315 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2022-11-09 07:49:54.318 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
-2022-11-09 07:49:54.320 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
-2022-11-09 09:03:15.826 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
-2022-11-09 09:03:15.829 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_341 on MSI with PID 15304 (C:\Project\221107\wiki\target\classes started by 85441 in C:\Project\221107\wiki)
-2022-11-09 09:03:15.829 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2022-11-09 09:03:15.862 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-11-09 09:03:15.862 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-11-09 09:03:16.300 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-11-09 09:03:16.301 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-11-09 09:03:16.314 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-2022-11-09 09:03:16.773 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-11-09 09:03:16.784 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-11-09 09:03:16.785 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-11-09 09:03:16.786 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-11-09 09:03:16.851 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-11-09 09:03:16.851 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 988 ms
-2022-11-09 09:03:17.542 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-09 09:03:17.732 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-11-09 09:03:17.745 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-11-09 09:03:17.760 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-11-09 09:03:17.769 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 2.251 seconds (JVM running for 2.901)
-2022-11-09 09:03:17.771 INFO  com.jiawa.wiki.config.WikiApplication             :25   [32m                  [0;39m 启动成功！！
-2022-11-09 09:03:17.772 INFO  com.jiawa.wiki.config.WikiApplication             :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-11-09 09:04:41.980 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-09 09:04:41.981 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-11-09 09:04:41.982 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-11-09 09:04:42.047 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-11-09 09:04:42.534 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-11-09 10:16:32.693 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2022-11-09 10:16:32.716 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-11-09 10:16:32.720 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-11-09 10:16:37.289 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
-2022-11-09 10:16:37.292 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_341 on MSI with PID 10392 (C:\Project\221107\wiki\target\classes started by 85441 in C:\Project\221107\wiki)
-2022-11-09 10:16:37.292 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2022-11-09 10:16:37.324 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-11-09 10:16:37.324 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-11-09 10:16:37.734 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-11-09 10:16:37.735 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-11-09 10:16:37.748 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2022-11-09 10:16:38.237 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-11-09 10:16:38.243 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-11-09 10:16:38.243 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-11-09 10:16:38.243 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-11-09 10:16:38.317 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-11-09 10:16:38.317 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 992 ms
-2022-11-09 10:16:38.830 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-09 10:16:39.114 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-11-09 10:16:39.126 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-11-09 10:16:39.138 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-11-09 10:16:39.146 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 2.151 seconds (JVM running for 2.748)
-2022-11-09 10:16:39.148 INFO  com.jiawa.wiki.config.WikiApplication             :25   [32m                  [0;39m 启动成功！！
-2022-11-09 10:16:39.148 INFO  com.jiawa.wiki.config.WikiApplication             :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-11-09 10:16:51.712 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-09 10:16:51.712 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-11-09 10:16:51.714 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
-2022-11-09 10:16:51.754 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 10:16:51.755 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 10:16:51.755 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 10:16:51.755 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 10:16:51.797 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 10:16:51.827 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-11-09 10:16:52.172 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-11-09 10:16:52.239 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 10:16:52.240 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：487 ms -------------
-2022-11-09 20:17:42.731 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
-2022-11-09 20:17:42.735 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_341 on MSI with PID 21040 (C:\Project\221107\wiki\target\classes started by 85441 in C:\Project\221107\wiki)
-2022-11-09 20:17:42.735 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2022-11-09 20:17:42.771 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-11-09 20:17:42.771 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-11-09 20:17:43.190 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-11-09 20:17:43.192 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-11-09 20:17:43.204 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-2022-11-09 20:17:43.654 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-11-09 20:17:43.660 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-11-09 20:17:43.660 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-11-09 20:17:43.660 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-11-09 20:17:43.733 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-11-09 20:17:43.734 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 963 ms
-2022-11-09 20:17:44.224 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-09 20:17:44.503 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-11-09 20:17:44.516 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-11-09 20:17:44.527 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-11-09 20:17:44.534 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 2.068 seconds (JVM running for 2.674)
-2022-11-09 20:17:44.536 INFO  com.jiawa.wiki.config.WikiApplication             :25   [32m                  [0;39m 启动成功！！
-2022-11-09 20:17:44.536 INFO  com.jiawa.wiki.config.WikiApplication             :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-11-09 20:17:48.370 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-09 20:17:48.371 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-11-09 20:17:48.371 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-11-09 20:17:48.415 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:17:48.416 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:17:48.417 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:17:48.417 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:17:48.482 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:17:48.519 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-11-09 20:17:52.197 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-11-09 20:17:52.247 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:17:52.247 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：3834 ms -------------
-2022-11-09 20:22:05.291 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:22:05.292 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:22:05.292 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:22:05.292 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:22:05.293 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:22:05.334 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:22:05.335 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：44 ms -------------
-2022-11-09 20:22:13.647 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:22:13.647 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:22:13.648 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:22:13.648 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:22:13.648 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:22:13.684 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:22:13.684 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：37 ms -------------
-2022-11-09 20:25:10.246 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:25:10.247 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:25:10.247 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:25:10.247 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:25:10.247 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:25:10.291 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:25:10.291 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：45 ms -------------
-2022-11-09 20:25:28.916 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:25:28.916 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:25:28.917 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:25:28.917 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:25:28.917 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:25:28.949 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:25:28.949 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：33 ms -------------
-2022-11-09 20:26:43.511 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:26:43.512 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:26:43.512 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:26:43.512 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:26:43.512 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:26:43.551 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:26:43.553 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：42 ms -------------
-2022-11-09 20:27:49.435 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:27:49.435 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:27:49.435 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:27:49.435 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:27:49.436 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:27:49.477 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:27:49.477 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：42 ms -------------
-2022-11-09 20:32:18.584 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:32:18.584 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:32:18.585 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:32:18.585 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:32:18.586 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:32:18.620 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:32:18.620 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：36 ms -------------
-2022-11-09 20:32:23.572 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:32:23.572 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:32:23.573 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:32:23.573 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:32:23.573 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:32:23.609 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:32:23.609 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：37 ms -------------
-2022-11-09 20:34:31.330 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:34:31.331 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:34:31.331 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:34:31.332 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:34:31.332 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:34:31.366 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:34:31.366 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：36 ms -------------
-2022-11-09 20:36:41.681 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:36:41.682 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:36:41.683 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:36:41.683 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:36:41.683 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:36:41.736 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:36:41.736 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：55 ms -------------
-2022-11-09 20:37:50.502 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:37:50.502 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:37:50.502 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:37:50.502 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:37:50.502 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:37:50.539 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:37:50.540 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：38 ms -------------
-2022-11-09 20:40:29.333 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:40:29.333 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:40:29.334 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:40:29.334 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:40:29.334 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:40:29.417 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:40:29.417 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：84 ms -------------
-2022-11-09 20:41:29.878 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:41:29.879 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:41:29.879 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:41:29.879 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:41:29.879 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:41:29.920 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:41:29.920 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：42 ms -------------
-2022-11-09 20:41:33.341 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:41:33.342 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:41:33.342 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:41:33.342 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:41:33.342 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:41:33.376 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:41:33.376 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：35 ms -------------
-2022-11-09 20:43:59.204 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:43:59.205 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:43:59.205 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:43:59.205 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:43:59.206 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:43:59.245 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:43:59.245 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：41 ms -------------
-2022-11-09 20:44:06.268 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:44:06.269 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:44:06.269 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:44:06.269 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:44:06.269 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:44:06.304 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:44:06.304 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：36 ms -------------
-2022-11-09 20:44:09.950 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:44:09.950 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:44:09.950 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:44:09.951 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:44:09.951 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:44:09.984 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:44:09.984 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：34 ms -------------
-2022-11-09 20:44:51.533 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:44:51.533 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:44:51.534 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:44:51.534 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:44:51.534 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:44:51.566 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:44:51.566 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：33 ms -------------
-2022-11-09 20:44:53.690 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:44:53.691 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:44:53.691 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:44:53.691 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:44:53.691 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:44:53.724 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:44:53.725 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：35 ms -------------
-2022-11-09 20:46:06.675 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:46:06.676 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:46:06.677 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:46:06.677 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:46:06.677 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:46:06.703 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:46:06.703 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：28 ms -------------
-2022-11-09 20:46:22.666 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:46:22.667 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:46:22.667 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:46:22.668 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:46:22.668 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:46:22.707 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:46:22.707 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：41 ms -------------
-2022-11-09 20:46:57.652 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:46:57.653 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:46:57.654 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:46:57.654 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:46:57.654 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:46:57.679 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:46:57.680 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：28 ms -------------
-2022-11-09 20:47:18.091 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:47:18.092 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:47:18.092 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:47:18.093 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:47:18.093 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:47:18.137 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:47:18.137 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：46 ms -------------
-2022-11-09 20:47:41.603 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:47:41.603 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:47:41.603 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:47:41.603 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:47:41.603 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:47:41.628 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:47:41.629 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：27 ms -------------
-2022-11-09 20:47:51.170 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:47:51.170 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:47:51.170 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:47:51.171 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:47:51.171 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:47:51.232 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:47:51.233 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：63 ms -------------
-2022-11-09 20:48:23.973 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:48:23.973 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:48:23.973 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:48:23.973 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:48:23.974 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:48:24.003 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:48:24.003 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：30 ms -------------
-2022-11-09 20:50:44.344 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:50:44.345 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:50:44.345 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:50:44.345 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:50:44.346 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:50:44.388 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:50:44.389 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：45 ms -------------
-2022-11-09 20:50:48.326 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:50:48.327 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:50:48.327 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:50:48.327 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:50:48.327 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:50:48.367 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:50:48.368 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：42 ms -------------
-2022-11-09 20:53:25.680 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:53:25.681 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:53:25.681 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:53:25.681 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:53:25.681 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:53:25.743 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:53:25.744 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：64 ms -------------
-2022-11-09 20:53:42.584 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:53:42.584 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:53:42.585 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:53:42.585 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:53:42.585 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:53:42.664 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:53:42.665 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：81 ms -------------
-2022-11-09 20:54:07.405 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:54:07.405 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:54:07.406 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:54:07.406 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:54:07.406 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:54:07.449 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:54:07.449 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：44 ms -------------
-2022-11-09 20:54:15.977 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:54:15.978 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:54:15.979 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:54:15.979 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:54:15.979 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:54:16.012 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:54:16.013 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：36 ms -------------
-2022-11-09 20:55:08.897 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:55:08.898 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:55:08.898 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:55:08.898 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:55:08.898 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:55:09.004 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:55:09.004 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：107 ms -------------
-2022-11-09 20:55:18.821 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:55:18.821 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:55:18.822 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:55:18.822 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:55:18.822 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:55:18.851 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:55:18.851 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：30 ms -------------
-2022-11-09 20:56:12.045 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:56:12.045 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:56:12.045 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:56:12.045 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:56:12.046 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:56:12.086 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:56:12.086 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：41 ms -------------
-2022-11-09 20:56:24.062 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:56:24.062 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:56:24.062 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:56:24.062 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:56:24.063 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:56:24.092 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:56:24.093 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：31 ms -------------
-2022-11-09 20:56:46.376 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:56:46.376 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:56:46.376 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:56:46.377 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:56:46.377 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:56:46.420 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:56:46.420 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：44 ms -------------
-2022-11-09 20:56:51.456 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:56:51.457 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:56:51.457 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:56:51.457 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:56:51.457 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:56:51.495 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:56:51.496 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：40 ms -------------
-2022-11-09 20:58:26.995 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:58:26.996 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:58:26.996 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:58:26.996 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:58:26.996 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:58:27.023 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:58:27.023 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：28 ms -------------
-2022-11-09 20:59:57.595 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 20:59:57.595 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 20:59:57.596 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 20:59:57.596 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 20:59:57.596 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 20:59:57.633 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 20:59:57.633 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：38 ms -------------
-2022-11-09 21:05:46.808 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 21:05:46.808 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 21:05:46.809 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 21:05:46.809 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 21:05:46.809 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 21:05:46.839 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 21:05:46.840 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：32 ms -------------
-2022-11-09 21:06:38.078 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 21:06:38.079 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 21:06:38.079 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 21:06:38.079 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 21:06:38.079 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 21:06:38.109 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 21:06:38.109 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：31 ms -------------
-2022-11-09 21:06:45.431 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 21:06:45.432 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 21:06:45.432 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 21:06:45.432 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 21:06:45.432 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 21:06:45.566 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 21:06:45.566 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：135 ms -------------
-2022-11-09 21:09:33.636 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 21:09:33.636 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 21:09:33.637 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 21:09:33.637 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 21:09:33.637 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 21:09:33.689 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 21:09:33.689 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：53 ms -------------
-2022-11-09 21:09:40.173 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 21:09:40.173 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 21:09:40.173 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 21:09:40.173 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 21:09:40.174 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 21:09:40.217 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 21:09:40.217 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：44 ms -------------
-2022-11-09 21:30:39.725 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
-2022-11-09 21:30:39.726 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2022-11-09 21:30:39.726 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
-2022-11-09 21:30:39.726 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
-2022-11-09 21:30:39.726 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
-2022-11-09 21:30:39.752 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
-2022-11-09 21:30:39.752 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：27 ms -------------
+2022-11-10 00:22:18.106 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_341 on MSI with PID 8028 (C:\Project\221107\wiki\target\classes started by 85441 in C:\Project\221107\wiki)
+2022-11-10 00:22:18.103 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2022-11-10 00:22:18.108 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-11-10 00:22:18.141 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-10 00:22:18.141 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-10 00:22:18.608 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-10 00:22:18.609 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-10 00:22:18.622 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2022-11-10 00:22:19.151 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-11-10 00:22:19.157 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-11-10 00:22:19.157 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-11-10 00:22:19.157 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-11-10 00:22:19.204 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-11-10 00:22:19.204 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1062 ms
+2022-11-10 00:22:19.715 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-10 00:22:19.991 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-11-10 00:22:20.002 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-11-10 00:22:20.015 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-11-10 00:22:20.022 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 2.209 seconds (JVM running for 2.851)
+2022-11-10 00:22:20.025 INFO  com.jiawa.wiki.config.WikiApplication             :25   [32m                  [0;39m 启动成功！！
+2022-11-10 00:22:20.026 INFO  com.jiawa.wiki.config.WikiApplication             :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-11-10 00:22:53.052 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-10 00:22:53.053 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-11-10 00:22:53.054 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-11-10 00:22:53.087 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 00:22:53.088 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 00:22:53.088 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 00:22:53.088 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 00:22:53.128 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 00:22:53.159 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-11-10 00:22:54.788 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-11-10 00:22:54.844 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 00:22:54.844 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：1758 ms -------------
+2022-11-10 00:23:25.886 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 00:23:25.886 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 00:23:25.887 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 00:23:25.887 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 00:23:25.887 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 00:23:25.923 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 00:23:25.923 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：37 ms -------------
+2022-11-10 00:58:05.199 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m40s194ms132µs100ns).
+2022-11-10 05:25:24.359 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 05:25:24.362 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 05:25:24.362 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 05:25:24.362 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 05:25:24.364 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 05:25:24.407 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 05:25:24.408 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：49 ms -------------
+2022-11-10 05:39:28.845 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 05:39:28.846 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 05:39:28.846 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 05:39:28.846 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 05:39:28.846 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 05:39:28.885 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"5","docCount":5,"id":1,"name":"2","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"python","docCount":7,"id":3,"name":"abc","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 05:39:28.885 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：40 ms -------------
+2022-11-10 06:14:28.990 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:14:28.991 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:14:28.992 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:14:28.992 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:14:28.992 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:14:29.032 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:14:29.033 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：43 ms -------------
+2022-11-10 06:14:37.900 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:14:37.901 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:14:37.902 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:14:37.902 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:14:37.902 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:14:37.950 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:14:37.951 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：51 ms -------------
+2022-11-10 06:14:39.391 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:14:39.391 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:14:39.391 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:14:39.391 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:14:39.392 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:14:39.426 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:14:39.427 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：36 ms -------------
+2022-11-10 06:15:31.221 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:15:31.222 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:15:31.222 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:15:31.223 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:15:31.223 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:15:31.263 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:15:31.263 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：42 ms -------------
+2022-11-10 06:15:33.987 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:15:33.987 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:15:33.988 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:15:33.988 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:15:33.988 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:15:34.016 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:15:34.016 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：29 ms -------------
+2022-11-10 06:16:55.709 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:16:55.710 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:16:55.710 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:16:55.711 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:16:55.711 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:16:55.727 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:16:55.727 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：18 ms -------------
+2022-11-10 06:16:55.730 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:16:55.730 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:16:55.731 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:16:55.731 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:16:55.731 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:16:55.740 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:16:55.740 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2022-11-10 06:17:31.757 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:17:31.758 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:17:31.758 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:17:31.758 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:17:31.758 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:17:31.786 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:17:31.786 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：29 ms -------------
+2022-11-10 06:17:31.789 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:17:31.790 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:17:31.790 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:17:31.791 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:17:31.791 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:17:31.800 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:17:31.800 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-11-10 06:18:23.070 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:18:23.070 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:18:23.071 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:18:23.071 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:18:23.072 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:18:23.105 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:18:23.106 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：36 ms -------------
+2022-11-10 06:18:23.109 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:18:23.109 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:18:23.109 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:18:23.109 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:18:23.110 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:18:23.118 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:18:23.118 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2022-11-10 06:18:46.513 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:18:46.514 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:18:46.514 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:18:46.514 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:18:46.514 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:18:46.546 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:18:46.546 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：33 ms -------------
+2022-11-10 06:18:46.550 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2022-11-10 06:18:46.551 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-11-10 06:18:46.551 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2022-11-10 06:18:46.551 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-10 06:18:46.551 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{}]
+2022-11-10 06:18:46.612 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"category1Id":1001,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":200,"category2Id":202,"description":"ts网景导航者浏览器上首次设计实现而成","docCount":7,"id":3,"name":"Ts","viewCount":8,"voteCount":9},{"category1Id":200,"category2Id":201,"description":"C++rumen","id":130074284265472,"name":"c++"}],"success":true}
+2022-11-10 06:18:46.613 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：63 ms -------------
