@@ -1295,3 +1295,75 @@
 2023-01-03 22:51:25.901 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m                  [0;39m <==      Total: 1
 2023-01-03 22:51:25.901 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":"<p>33333333333333</p>","success":true}
 2023-01-03 22:51:25.901 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：26 ms -------------
+2023-01-03 22:56:05.842 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 22:56:05.842 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2023-01-03 22:56:05.842 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2023-01-03 22:56:05.842 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 22:56:05.844 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 22:56:05.866 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-01-03 22:56:05.867 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 22:56:05.879 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-01-03 22:56:05.880 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-01-03 22:56:05.881 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-01-03 22:56:05.881 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-01-03 22:56:05.881 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.2, 1, 0, 0
+2023-01-03 22:56:05.881 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 262015364240642048, 257502782024716300, 2, uniword, 1, null, null
+2023-01-03 22:56:05.882 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-01-03 22:56:05.882 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-01-03 22:56:05.882 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 7
+2023-01-03 22:56:05.883 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.2","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":257502782024716300,"id":262015364240642048,"name":"uniword","parent":2,"sort":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-01-03 22:56:05.883 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：41 ms -------------
+2023-01-03 22:56:58.819 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 22:56:58.820 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2023-01-03 22:56:58.820 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2023-01-03 22:56:58.820 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 22:56:58.820 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 22:56:58.866 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-01-03 22:56:58.867 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 22:56:58.879 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-01-03 22:56:58.880 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-01-03 22:56:58.881 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-01-03 22:56:58.883 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-01-03 22:56:58.883 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.2, 1, 0, 0
+2023-01-03 22:56:58.884 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 262015364240642048, 257502782024716300, 2, uniword, 1, null, null
+2023-01-03 22:56:58.884 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-01-03 22:56:58.885 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-01-03 22:56:58.885 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 7
+2023-01-03 22:56:58.887 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.2","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":257502782024716300,"id":262015364240642048,"name":"uniword","parent":2,"sort":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-01-03 22:56:58.887 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：68 ms -------------
+2023-01-03 22:57:02.689 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 22:57:02.690 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2023-01-03 22:57:02.690 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2023-01-03 22:57:02.690 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 22:57:02.690 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 22:57:02.717 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-01-03 22:57:02.717 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 22:57:02.733 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-01-03 22:57:02.733 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-01-03 22:57:02.733 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-01-03 22:57:02.733 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-01-03 22:57:02.734 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.2, 1, 0, 0
+2023-01-03 22:57:02.734 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 262015364240642048, 257502782024716300, 2, uniword, 1, null, null
+2023-01-03 22:57:02.734 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-01-03 22:57:02.735 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-01-03 22:57:02.735 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 7
+2023-01-03 22:57:02.735 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.2","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":257502782024716300,"id":262015364240642048,"name":"uniword","parent":2,"sort":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-01-03 22:57:02.736 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：47 ms -------------
+2023-01-03 22:57:25.693 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 22:57:25.693 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2023-01-03 22:57:25.693 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2023-01-03 22:57:25.694 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 22:57:25.694 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 22:57:25.716 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-01-03 22:57:25.717 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 22:57:25.727 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-01-03 22:57:25.727 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-01-03 22:57:25.728 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-01-03 22:57:25.728 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-01-03 22:57:25.728 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.2, 1, 0, 0
+2023-01-03 22:57:25.728 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 262015364240642048, 257502782024716300, 2, uniword, 1, null, null
+2023-01-03 22:57:25.729 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-01-03 22:57:25.729 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-01-03 22:57:25.729 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 7
+2023-01-03 22:57:25.730 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.2","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":257502782024716300,"id":262015364240642048,"name":"uniword","parent":2,"sort":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-01-03 22:57:25.730 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：37 ms -------------
