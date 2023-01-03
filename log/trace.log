@@ -582,3 +582,223 @@
 2023-01-03 21:18:02.193 INFO  com.jiawa.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
 2023-01-03 21:18:02.194 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":7,"category2Id":7,"id":257502782024716288,"name":"007"}],"total":3},"success":true}
 2023-01-03 21:18:02.194 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：27 ms -------------
+2023-01-03 21:40:42.970 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:40:42.973 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2023-01-03 21:40:42.973 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategaryController.all
+2023-01-03 21:40:42.973 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:40:42.974 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 21:40:42.994 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-01-03 21:40:42.996 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:40:43.003 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2023-01-03 21:40:43.004 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 541449112391680, 0, test, 1
+2023-01-03 21:40:43.005 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238277114581880832, 22, 11, 33
+2023-01-03 21:40:43.005 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2023-01-03 21:40:43.005 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, vue, 101
+2023-01-03 21:40:43.005 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, html, 102
+2023-01-03 21:40:43.006 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, 基础, 200
+2023-01-03 21:40:43.006 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2023-01-03 21:40:43.006 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, java开发, 202
+2023-01-03 21:40:43.006 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238289652929400832, 541449112391680, test01, 300
+2023-01-03 21:40:43.006 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 9
+2023-01-03 21:40:43.008 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"id":541449112391680,"name":"test","parent":0,"sort":1},{"id":238277114581880832,"name":"11","parent":22,"sort":33},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"html","parent":100,"sort":102},{"id":200,"name":"基础","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"java开发","parent":200,"sort":202},{"id":238289652929400832,"name":"test01","parent":541449112391680,"sort":300}],"success":true}
+2023-01-03 21:40:43.008 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：38 ms -------------
+2023-01-03 21:40:43.024 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:40:43.024 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2023-01-03 21:40:43.025 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2023-01-03 21:40:43.025 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:40:43.025 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-01-03 21:40:43.027 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-01-03 21:40:43.028 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:40:43.035 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2023-01-03 21:40:43.036 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2023-01-03 21:40:43.036 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2023-01-03 21:40:43.036 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-01-03 21:40:43.037 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2023-01-03 21:40:43.045 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-01-03 21:40:43.045 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, js, 100, 101, js是一种具有函数优先的轻量级, null, 5, 6, 7
+2023-01-03 21:40:43.045 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 257502782024716288, 007, 7, 7, null, 007, null, null, null
+2023-01-03 21:40:43.045 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m <==      Total: 2
+2023-01-03 21:40:43.046 INFO  com.jiawa.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：3
+2023-01-03 21:40:43.046 INFO  com.jiawa.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
+2023-01-03 21:40:43.046 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":7,"category2Id":7,"id":257502782024716288,"name":"007"}],"total":3},"success":true}
+2023-01-03 21:40:43.046 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：22 ms -------------
+2023-01-03 21:45:28.162 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:45:28.162 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2023-01-03 21:45:28.162 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategaryController.all
+2023-01-03 21:45:28.162 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:45:28.163 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 21:45:28.173 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-01-03 21:45:28.173 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:45:28.201 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2023-01-03 21:45:28.201 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 541449112391680, 0, test, 1
+2023-01-03 21:45:28.201 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238277114581880832, 22, 11, 33
+2023-01-03 21:45:28.202 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2023-01-03 21:45:28.202 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, vue, 101
+2023-01-03 21:45:28.202 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, html, 102
+2023-01-03 21:45:28.202 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, 基础, 200
+2023-01-03 21:45:28.202 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2023-01-03 21:45:28.202 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, java开发, 202
+2023-01-03 21:45:28.203 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238289652929400832, 541449112391680, test01, 300
+2023-01-03 21:45:28.203 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 9
+2023-01-03 21:45:28.204 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"id":541449112391680,"name":"test","parent":0,"sort":1},{"id":238277114581880832,"name":"11","parent":22,"sort":33},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"html","parent":100,"sort":102},{"id":200,"name":"基础","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"java开发","parent":200,"sort":202},{"id":238289652929400832,"name":"test01","parent":541449112391680,"sort":300}],"success":true}
+2023-01-03 21:45:28.204 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：42 ms -------------
+2023-01-03 21:45:28.219 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:45:28.220 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2023-01-03 21:45:28.220 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2023-01-03 21:45:28.220 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:45:28.220 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-01-03 21:45:28.221 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-01-03 21:45:28.222 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:45:28.236 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2023-01-03 21:45:28.237 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2023-01-03 21:45:28.237 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2023-01-03 21:45:28.237 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-01-03 21:45:28.238 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2023-01-03 21:45:28.267 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-01-03 21:45:28.267 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, js, 100, 101, js是一种具有函数优先的轻量级, null, 5, 6, 7
+2023-01-03 21:45:28.267 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 257502782024716288, 007, 7, 7, null, 007, null, null, null
+2023-01-03 21:45:28.268 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m <==      Total: 2
+2023-01-03 21:45:28.268 INFO  com.jiawa.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：3
+2023-01-03 21:45:28.269 INFO  com.jiawa.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
+2023-01-03 21:45:28.269 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":7,"category2Id":7,"id":257502782024716288,"name":"007"}],"total":3},"success":true}
+2023-01-03 21:45:28.269 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：50 ms -------------
+2023-01-03 21:54:35.760 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:54:35.761 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2023-01-03 21:54:35.761 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategaryController.all
+2023-01-03 21:54:35.761 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:54:35.761 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 21:54:37.263 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-01-03 21:54:37.265 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:54:37.498 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2023-01-03 21:54:37.498 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 541449112391680, 0, test, 1
+2023-01-03 21:54:37.499 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238277114581880832, 22, 11, 33
+2023-01-03 21:54:37.499 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2023-01-03 21:54:37.500 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, vue, 101
+2023-01-03 21:54:37.500 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, html, 102
+2023-01-03 21:54:37.500 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, 基础, 200
+2023-01-03 21:54:37.500 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2023-01-03 21:54:37.500 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, java开发, 202
+2023-01-03 21:54:37.500 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238289652929400832, 541449112391680, test01, 300
+2023-01-03 21:54:37.501 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 9
+2023-01-03 21:54:37.501 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"id":541449112391680,"name":"test","parent":0,"sort":1},{"id":238277114581880832,"name":"11","parent":22,"sort":33},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"html","parent":100,"sort":102},{"id":200,"name":"基础","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"java开发","parent":200,"sort":202},{"id":238289652929400832,"name":"test01","parent":541449112391680,"sort":300}],"success":true}
+2023-01-03 21:54:37.501 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：1741 ms -------------
+2023-01-03 21:54:37.504 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:54:37.504 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2023-01-03 21:54:37.504 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategaryController.all
+2023-01-03 21:54:37.504 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:54:37.505 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 21:54:37.505 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-01-03 21:54:37.505 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:54:37.726 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2023-01-03 21:54:37.726 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 541449112391680, 0, test, 1
+2023-01-03 21:54:37.726 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238277114581880832, 22, 11, 33
+2023-01-03 21:54:37.727 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2023-01-03 21:54:37.727 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, vue, 101
+2023-01-03 21:54:37.727 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, html, 102
+2023-01-03 21:54:37.727 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, 基础, 200
+2023-01-03 21:54:37.727 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2023-01-03 21:54:37.727 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, java开发, 202
+2023-01-03 21:54:37.727 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238289652929400832, 541449112391680, test01, 300
+2023-01-03 21:54:37.728 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 9
+2023-01-03 21:54:37.728 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"id":541449112391680,"name":"test","parent":0,"sort":1},{"id":238277114581880832,"name":"11","parent":22,"sort":33},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"html","parent":100,"sort":102},{"id":200,"name":"基础","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"java开发","parent":200,"sort":202},{"id":238289652929400832,"name":"test01","parent":541449112391680,"sort":300}],"success":true}
+2023-01-03 21:54:37.728 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：224 ms -------------
+2023-01-03 21:54:40.185 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:54:40.185 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2023-01-03 21:54:40.185 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategaryController.all
+2023-01-03 21:54:40.185 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:54:40.186 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 21:54:40.209 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-01-03 21:54:40.209 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:54:40.217 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2023-01-03 21:54:40.217 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 541449112391680, 0, test, 1
+2023-01-03 21:54:40.217 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238277114581880832, 22, 11, 33
+2023-01-03 21:54:40.217 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2023-01-03 21:54:40.217 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, vue, 101
+2023-01-03 21:54:40.218 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, html, 102
+2023-01-03 21:54:40.218 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, 基础, 200
+2023-01-03 21:54:40.218 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2023-01-03 21:54:40.218 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, java开发, 202
+2023-01-03 21:54:40.218 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238289652929400832, 541449112391680, test01, 300
+2023-01-03 21:54:40.218 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 9
+2023-01-03 21:54:40.219 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"id":541449112391680,"name":"test","parent":0,"sort":1},{"id":238277114581880832,"name":"11","parent":22,"sort":33},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"html","parent":100,"sort":102},{"id":200,"name":"基础","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"java开发","parent":200,"sort":202},{"id":238289652929400832,"name":"test01","parent":541449112391680,"sort":300}],"success":true}
+2023-01-03 21:54:40.219 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：34 ms -------------
+2023-01-03 21:54:40.229 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:54:40.229 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2023-01-03 21:54:40.229 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2023-01-03 21:54:40.229 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:54:40.229 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-01-03 21:54:40.230 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-01-03 21:54:40.231 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:54:40.240 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2023-01-03 21:54:40.240 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2023-01-03 21:54:40.240 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2023-01-03 21:54:40.241 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-01-03 21:54:40.241 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2023-01-03 21:54:40.247 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-01-03 21:54:40.248 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, js, 100, 101, js是一种具有函数优先的轻量级, null, 5, 6, 7
+2023-01-03 21:54:40.248 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 257502782024716288, 007, 7, 7, null, 007, null, null, null
+2023-01-03 21:54:40.248 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m <==      Total: 2
+2023-01-03 21:54:40.249 INFO  com.jiawa.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：3
+2023-01-03 21:54:40.249 INFO  com.jiawa.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
+2023-01-03 21:54:40.249 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":7,"category2Id":7,"id":257502782024716288,"name":"007"}],"total":3},"success":true}
+2023-01-03 21:54:40.249 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：20 ms -------------
+2023-01-03 21:54:40.901 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:54:40.901 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2023-01-03 21:54:40.901 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategaryController.all
+2023-01-03 21:54:40.902 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:54:40.902 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 21:54:40.929 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-01-03 21:54:40.929 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:54:40.946 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2023-01-03 21:54:40.947 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 541449112391680, 0, test, 1
+2023-01-03 21:54:40.947 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238277114581880832, 22, 11, 33
+2023-01-03 21:54:40.947 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2023-01-03 21:54:40.947 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, vue, 101
+2023-01-03 21:54:40.947 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, html, 102
+2023-01-03 21:54:40.948 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, 基础, 200
+2023-01-03 21:54:40.948 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2023-01-03 21:54:40.948 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, java开发, 202
+2023-01-03 21:54:40.948 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238289652929400832, 541449112391680, test01, 300
+2023-01-03 21:54:40.948 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 9
+2023-01-03 21:54:40.949 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"id":541449112391680,"name":"test","parent":0,"sort":1},{"id":238277114581880832,"name":"11","parent":22,"sort":33},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"html","parent":100,"sort":102},{"id":200,"name":"基础","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"java开发","parent":200,"sort":202},{"id":238289652929400832,"name":"test01","parent":541449112391680,"sort":300}],"success":true}
+2023-01-03 21:54:40.949 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：48 ms -------------
+2023-01-03 21:54:43.214 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:54:43.214 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2023-01-03 21:54:43.214 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategaryController.all
+2023-01-03 21:54:43.214 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:54:43.215 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: []
+2023-01-03 21:54:43.300 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-01-03 21:54:43.300 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:54:43.710 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2023-01-03 21:54:43.710 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 541449112391680, 0, test, 1
+2023-01-03 21:54:43.711 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238277114581880832, 22, 11, 33
+2023-01-03 21:54:43.711 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2023-01-03 21:54:43.711 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, vue, 101
+2023-01-03 21:54:43.711 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, html, 102
+2023-01-03 21:54:43.711 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, 基础, 200
+2023-01-03 21:54:43.711 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2023-01-03 21:54:43.711 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, java开发, 202
+2023-01-03 21:54:43.712 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 238289652929400832, 541449112391680, test01, 300
+2023-01-03 21:54:43.712 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 9
+2023-01-03 21:54:43.712 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":[{"id":541449112391680,"name":"test","parent":0,"sort":1},{"id":238277114581880832,"name":"11","parent":22,"sort":33},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"html","parent":100,"sort":102},{"id":200,"name":"基础","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"java开发","parent":200,"sort":202},{"id":238289652929400832,"name":"test01","parent":541449112391680,"sort":300}],"success":true}
+2023-01-03 21:54:43.712 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：498 ms -------------
+2023-01-03 21:54:43.719 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m                  [0;39m ------------- 开始 -------------
+2023-01-03 21:54:43.720 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2023-01-03 21:54:43.720 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2023-01-03 21:54:43.720 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-01-03 21:54:43.720 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m                  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-01-03 21:54:43.721 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-01-03 21:54:43.721 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2023-01-03 21:54:43.970 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2023-01-03 21:54:43.971 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2023-01-03 21:54:43.971 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2023-01-03 21:54:43.971 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-01-03 21:54:43.972 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2023-01-03 21:54:44.152 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-01-03 21:54:44.153 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, js, 100, 101, js是一种具有函数优先的轻量级, null, 5, 6, 7
+2023-01-03 21:54:44.153 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 257502782024716288, 007, 7, 7, null, 007, null, null, null
+2023-01-03 21:54:44.153 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m <==      Total: 2
+2023-01-03 21:54:44.153 INFO  com.jiawa.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：3
+2023-01-03 21:54:44.154 INFO  com.jiawa.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
+2023-01-03 21:54:44.154 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"description":"js是一种具有函数优先的轻量级","docCount":5,"id":1,"name":"js","viewCount":6,"voteCount":7},{"category1Id":7,"category2Id":7,"id":257502782024716288,"name":"007"}],"total":3},"success":true}
+2023-01-03 21:54:44.154 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m                  [0;39m ------------- 结束 耗时：435 ms -------------
